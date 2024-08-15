@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': {'max': '435px'},
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
@@ -14,8 +17,10 @@ export default {
       },
       colors: {
         'light-pink': '#FAF3EA',
+        'light-salmon': '#F9F1E7',
         'gray': '#898989',
         'light-gray': '#9F9F9F',
+        'silver-gray': '#F4F5F7',
       },
       height: {
         'custom': '3.8rem',
