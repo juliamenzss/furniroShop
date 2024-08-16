@@ -19,8 +19,11 @@ export default {
         'light-yellow': '#F9F1E7',
         'light-salmon': '#F9F1E7',
         'gray': '#898989',
-        'light-gray': '#9F9F9F',
+        'gray-light': '#9F9F9F',
         'silver-gray': '#F4F5F7',
+        'caramel': '#B88E2F',
+        'green': '#3A5B22',
+        'blue': '#0F3DDE',
       },
       height: {
         'custom': '3.8rem',

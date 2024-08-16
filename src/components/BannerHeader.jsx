@@ -1,5 +1,5 @@
-import Banner from '../assets/banner.png'
-import Arrow from '../assets/arrow.png'
+import Banner from './../assets/banner/banner.png'
+import Arrow from './../assets/banner/arrow.png'
 
 function BannerHeader() {
     return (

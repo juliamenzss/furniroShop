@@ -1,6 +1,6 @@
-import Logo from "./../assets/logo.png"
-import Cart from "./../assets/cart.png"
-import Profile from "./../assets/profile.png"
+import Logo from "./../assets/menu/logo.png"
+import Cart from "./../assets/menu/cart.png"
+import Profile from "./../assets/menu/profile.png"
 
 function Menu() {
     return (

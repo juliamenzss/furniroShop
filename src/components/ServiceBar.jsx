@@ -1,7 +1,7 @@
-import Quality from "../assets/quality.png";
-import Protection from "../assets/protection.png";
-import Shipping from "../assets/shipping.png";
-import Support from "../assets/support.png";
+import Quality from "../assets/serviceBar/quality.png";
+import Protection from "../assets/serviceBar/protection.png";
+import Shipping from "../assets/serviceBar/shipping.png";
+import Support from "../assets/serviceBar/support.png";
 
 function ServiceBar() {
   return (

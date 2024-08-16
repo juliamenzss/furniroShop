@@ -1,4 +1,4 @@
-import Arrow from '../assets/arrow.png'
+import Arrow from '../assets/banner/arrow.png'
 
 function NavigationToolbar() {
   return (

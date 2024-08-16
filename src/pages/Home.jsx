@@ -12,7 +12,7 @@ function Home() {
       <FilterToolbar />
       <ProductCard />
       <ServiceBar />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
