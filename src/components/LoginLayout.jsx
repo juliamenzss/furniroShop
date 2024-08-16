@@ -3,29 +3,18 @@ import GoogleIcon from "./../assets/authImage/GoogleIcon.png";
 import AppleIcon from "./../assets/authImage/AppleIcon.png";
 
 
-
-function RegisterLayout() {
+function LoginLayout() {
   return (
     <section className="flex h-screen">
       <section className="w-full md:w-7/12 h-screen z-10 flex-col flex items-center justify-center">
         <form className="flex items-start justify-start flex-col">
           <div className="max-w-xs whitespace-normal">
-            <h1 className="text-xl sm:text-3xl font-semibold pb-2">Get Started Now</h1>
+            <h1 className="text-xl sm:text-3xl font-semibold pb-2">Welcome back!</h1>
             <p className="text-sm pb-4 sm:text-base font-semibold sm:pb-6 ">
               Enter your Credentials to access your account
             </p>
           </div>
-          <label for="name" className="text-xs sm:text-sm font-semibold">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Enter your name"
-            className="w-[295px] sm:w-[420px] h-7 rounded-lg border pl-2 focus:outline-none border-slate-300 text-black text-xs"
-            required
-          />{" "}
-          <br />
+     
           <label for="email" className="text-xs sm:text-sm font-semibold">
             Email Address
           </label>
@@ -37,8 +26,9 @@ function RegisterLayout() {
             required
           />{" "}
           <br />
-          <label for="password" className="text-xs sm:text-sm font-semibold">
-            Password
+          <label for="password" className="text-xs space-x-36 sm:text-sm font-semibold sm:space-x-64">
+            <span>Password</span>
+            <a href="/" className="text-blue font-medium text-[10px]">forgot password</a>
           </label>
           <input
             type="password"
@@ -56,10 +46,10 @@ function RegisterLayout() {
               required
             />
             <label htmlFor="terms" className="text-xs font-medium">
-              I agree to the <a href="" className="underline">terms & policy</a>
+            Remember for 30 days
             </label>
           </div>
-          <div className="pl-4 sm:flex items-center py-5 sm:pb-8 justify-center sm:pt-6 text-white">
+          <div className="pl-4 sm:flex items-center py-5 sm:pb-8 justify-center sm:pt-6 sm:pl-0 text-white">
             <button
               type="submit"
               className="bg-green h-auto w-[280px] sm:w-[420px] text-sm font-bold p-1 rounded-lg border transition hover:bg-slate-200 hover:border-transparent hover:text-black ">
@@ -87,7 +77,7 @@ function RegisterLayout() {
             </button>
           </div>
           <div className="pt-5 text-sm font-semibold">
-          <p>Have an account? <a href="/login" className="text-blue">Sign In</a></p>
+          <p>Don’t have an account? <a href="/login" className="text-blue">Sign Up</a></p>
           </div>
           
       </section>
@@ -102,4 +92,4 @@ function RegisterLayout() {
   );
 }
 
-export { RegisterLayout };
+export { LoginLayout };

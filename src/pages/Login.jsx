@@ -1,8 +1,8 @@
-import { Menu } from "../components/Menu";
+import { LoginLayout } from "../components/LoginLayout";
 function Login() {
   return (
     <div>
-      <Menu />
+      <LoginLayout />
     </div>
   );
 }
