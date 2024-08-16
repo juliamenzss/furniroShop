@@ -1,8 +1,8 @@
-import { AuthLayout } from "../components/AuthLayout";
+import { RegisterLayout } from "../components/RegisterLayout";
 function Register() {
   return (
     <div>
-      <AuthLayout />
+      <RegisterLayout />
     </div>
   );
 }
