@@ -4,7 +4,7 @@ import Profile from "./../assets/profile.png"
 
 function Menu() {
     return (
-        <header className="h-12 sm:h-20 flex itens-center justify-between p-5 w-full shadow-header ">
+        <header className="h-12 sm:h-20 flex itens-center justify-between p-5 w-full ">
             <div className="flex items-center justify-center space-x-1 ">
                 <img src={Logo} alt="Company logo" className="h-4 w-auto md:pl-7 md:h-5"/>
                 <a href="/"><h1 className="font-montserrat font-bold text-lg md:text-xl">Furniro</h1></a>

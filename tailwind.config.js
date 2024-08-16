@@ -13,10 +13,10 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       boxShadow:{
-        'header':'1px 4px 5px #000000015',
+        'header':'2px 2px 5px #000000015',
       },
       colors: {
-        'light-pink': '#FAF3EA',
+        'light-yellow': '#F9F1E7',
         'light-salmon': '#F9F1E7',
         'gray': '#898989',
         'light-gray': '#9F9F9F',
