@@ -1,10 +1,10 @@
 function BillingForm() {
   return (
-    <section className="bg-red-200 py-8 whitespace-nowrap dark:bg-gray-900 md:py-16 h-auto w-screen sm:flex">
-      <div className=" bg-orange-100 mx-auto w-1/2 flex items-center justify-center">
+    <section className=" sm:w-1/2 h-full flex">
+      <div className="mx-auto w-1/2 flex items-center justify-center">
         <div className="justify-center items-center">
           <div>
-            <h2 className="font-semibold py-2 text-2xl sm:py-5">
+            <h2 className="font-semibold py-2 text-2xl sm:pb-6 pt-10 sm:pt-16">
               Billing Details
             </h2>
           </div>
