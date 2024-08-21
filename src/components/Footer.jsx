@@ -6,7 +6,7 @@ function Footer() {
             <h3 className=" pb-5 text-lg sm:pb-8 font-bold sm:text-2xl">
               Furniro.
             </h3>
-            <div className="text-sm sm:text-base text-light-gray font-light">
+            <div className="text-sm sm:text-base text-gray-light font-light">
               400 University Drive Suite 200 Coral <br /> Gables,
               <br />
               FL 33134 USA
@@ -14,7 +14,7 @@ function Footer() {
           </section>
 
           <section className="pt-9 sm:pt-0 font-medium">
-            <h4 className="pb-4 sm:pb-10 text-light-gray">Links</h4>
+            <h4 className="pb-4 sm:pb-10 text-gray-light">Links</h4>
             <ul className="gap-4 sm:gap-8 flex flex-col">
               <li>
                 <a href="/">Home</a>
@@ -32,7 +32,7 @@ function Footer() {
           </section>
 
           <section className="pt-9 sm:pt-0 font-medium">
-            <h4 className="pb-4 sm:pb-10 text-light-gray">Help</h4>
+            <h4 className="pb-4 sm:pb-10 text-gray-light">Help</h4>
             <ul className="gap-4 sm:gap-8 flex flex-col">
               <li>
                 <a href="/">Payment Options</a>
@@ -46,7 +46,7 @@ function Footer() {
             </ul>
           </section>
 
-          <section className="pt-9 sm:pt-0 text-light-gray">
+          <section className="pt-9 sm:pt-0 text-gray-light">
             <h4 className="pb-4 sm:pb-10 font-medium">Newsletter</h4>
             <form className="flex-col-3 sm:flex flex-wrap gap-8">
               <input

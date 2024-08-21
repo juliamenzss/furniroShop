@@ -12,7 +12,7 @@ function Billing() {
     <div>
       <Menu />
       <BannerHeader name={bannerName} />
-      <div className="flex flex-col items-center lg:flex-row justify-center lg:items-start pr-24">
+      <div className="flex flex-col items-center lg:flex-row justify-center lg:items-start">
       <BillingForm /> 
       <BillingDetails />
       </div>

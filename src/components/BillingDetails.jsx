@@ -57,7 +57,7 @@ function BillingDetails() {
             </span>
             <span className='flex-row flex items-center'>
               <input type="checkbox" className='appearance-none w-3 h-3 border border-gray-light rounded-full checked:bg-black cursor-pointer focus:outline-none'/>
-              <p className='pl-3 text-gray-light font-medium'>Direct Bank Transfer</p>
+              <p className='pl-3 text-gray-light font-medium'>Cash On Delivery</p>
             </span>
 
         <div className='py-6'>            
