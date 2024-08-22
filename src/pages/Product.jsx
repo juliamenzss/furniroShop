@@ -1,6 +1,7 @@
 import { Menu } from "../components/Menu"
 import { Footer } from "../components/Footer"
 import { NavigationToolbar } from "../components/NavigationToolbar"
+import { Details } from "../components/Details";
 
 
 function Product() {
@@ -8,6 +9,7 @@ function Product() {
         <div>
             <Menu />
             <NavigationToolbar />
+            <Details />
             <Footer />
         </div>
     )

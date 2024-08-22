@@ -24,6 +24,8 @@ export default {
         'caramel': '#B88E2F',
         'green': '#3A5B22',
         'blue': '#0F3DDE',
+        'red-light': '#E97171',
+        'tiffany': '#2EC1AC',
       },
       height: {
         'custom': '3.8rem',

@@ -12,10 +12,10 @@ function Menu() {
             
             <nav>
                 <ul className="hidden sm:text-sm sm:space-x-6 md:text-lg md:flex itens-center justify-center p-2 md:space-x-12 font-medium pr-18">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/shop">Shop</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/" className="transition hover:text-caramel">Home</a></li>
+                    <li><a href="/shop" className="transition hover:text-caramel">Shop</a></li>
+                    <li><a href="/about"  className="transition hover:text-caramel">About</a></li>
+                    <li><a href="/contact"  className="transition hover:text-caramel">Contact</a></li>
                 </ul>
             </nav>
 

@@ -17,16 +17,16 @@ function Footer() {
             <h4 className="pb-4 sm:pb-10 text-gray-light">Links</h4>
             <ul className="gap-4 sm:gap-8 flex flex-col">
               <li>
-                <a href="/">Home</a>
+                <a href="/" className="transition hover:text-caramel">Home</a>
               </li>
               <li>
-                <a href="/">Shop</a>
+                <a href="/" className="transition hover:text-caramel">Shop</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a href="/" className="transition hover:text-caramel">About</a>
               </li>
               <li>
-                <a href="/">Contact</a>
+                <a href="/"   className="transition hover:text-caramel">Contact</a>
               </li>
             </ul>
           </section>
@@ -35,29 +35,29 @@ function Footer() {
             <h4 className="pb-4 sm:pb-10 text-gray-light">Help</h4>
             <ul className="gap-4 sm:gap-8 flex flex-col">
               <li>
-                <a href="/">Payment Options</a>
+                <a href="/" className="transition hover:text-caramel">Payment Options</a>
               </li>
               <li>
-                <a href="/">Returns</a>
+                <a href="/" className="transition hover:text-caramel">Returns</a>
               </li>
               <li>
-                <a href="/">Privacy Policies</a>
+                <a href="/" className="transition hover:text-caramel">Privacy Policies</a>
               </li>
             </ul>
           </section>
 
           <section className="pt-9 sm:pt-0 text-gray-light">
             <h4 className="pb-4 sm:pb-10 font-medium">Newsletter</h4>
-            <form className="flex-col-3 sm:flex flex-wrap gap-8">
+            <form className="flex-col-3 sm:flex flex-wrap gap-8 ">
               <input
-                className=" border-b-2 border-light-gray focus:outline-none"
+                className=" border-b-2 border-zinc-600 focus:outline-none"
                 type="email"
                 placeholder="Enter Email Adress"
               />
               <button
-                className="pt-4 font-light sm:pt-0 border-b-2 border-light-gray"
+                className="pt-4 font-medium sm:pt-0 border-b-2 text-black border-zinc-600"
                 type="subit">
-                Subscribe
+                SUBSCRIBE
               </button>
             </form>
           </section>
