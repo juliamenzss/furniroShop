@@ -1,11 +1,20 @@
-import Filter from '../assets/filter.png'
+import FilterImage from '../../assets/filter.png'
+import { useState } from 'react'
+import {Filter} from './Filter'
 
-function FilterToolbar() {
+function Toolbar() {
+
+  const[filterClose, setFilterClose] = useState(false);
+
+  const toggleFilter = () => {
+    setFilterClose((prevFilterClose) => !prevFilterClose)
+  }
+
   return (
     <section className="flex-col sm:flex-row sm:h-20 flex sm:items-center justify-between p-4 bg-light-yellow w-full">
         <div className='flex flex-row justify-around'>
-      <div className="p-6 text-sm space-x-2 sm:pl-2 sm:space-x-2 flex flex-nowrap md:text-base md:flex justify-start items-center md:pl-16 md:space-x-3 font-normal">
-        <button><img src={Filter} alt="Filter" className="h-3 sm:h-5 w-auto" /></button>
+      <div className="relative p-6 text-sm space-x-2 sm:pl-2 sm:space-x-2 flex flex-nowrap md:text-base md:flex justify-start items-center md:pl-16 md:space-x-3 font-normal">
+        <button onClick={toggleFilter}><img src={FilterImage} alt="Filter" className="h-3 sm:h-5 w-auto" /></button>
         <p>Filter</p>
       </div>
       <div className="text-sm  items-center  sm:items-center flex ">
@@ -22,10 +31,12 @@ function FilterToolbar() {
         <p className="px-3 text-xs lg:text-sm sm:font-normal">Short by</p>
         <input type="text" placeholder="Default" className="flex border-none pl-2 outline-none h-12 w-36 sm:w-20 lg:w-40"/>
       </div>
+      
       </section>
+      {filterClose && <Filter />}
     </section>
   );
 }
-export { FilterToolbar }
+export { Toolbar }
 
 

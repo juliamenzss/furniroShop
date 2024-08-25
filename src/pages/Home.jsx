@@ -1,57 +1,67 @@
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { BannerHeader } from "../components/BannerHeader";
 import { ServiceBar } from "../components/ServiceBar";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { ProductCard } from "../components/ProductCard";
-import { FilterToolbar } from "../components/FilterToolbar";
-import { useEffect, useState } from "react";
+import { Toolbar } from "../components/toolbar/Toolbar";
+import { productFailed, productLoading, productReceived } from "../store/Product/productSlice";
+import { selectProducts, selectProductsStatus } from "../store/Product/Selectors";
 
 function Home() {
-  const [data, setData] = useState({ products: [] });
+  const dispatch = useDispatch();
+  const products = useSelector(selectProducts);
+  const status = useSelector(selectProductsStatus);
+  const baseURL = useSelector((state) => state.URL.baseURL)
 
   useEffect(() => {
     const fetchData = async () => {
+      dispatch(productLoading());
       try {
-        const response = await fetch('http://localhost:3000/product');
+        const response = await fetch(baseURL);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        console.log(data);
-        setData(data);
+        dispatch(productReceived(data));
       } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
+        dispatch(productFailed(error.toString()));
       }
     };
 
     fetchData();
-  }, []);
+  }, [dispatch, baseURL]);
 
   return (
     <div>
       <Menu />
       <BannerHeader />
-      <FilterToolbar />
+      <Toolbar/>
       <div className="w-full flex flex-wrap items-center justify-center py-10">
-      {data.products.length > 0 ? (
-        data.products.map(product => (
-          <ProductCard
-            key={product.id}
-            image={product.image}
-            name={product.name}
-            description={product.description}
-            skus={product.productSkus.map(productSku => ({
-              key: productSku.id,
-              price:productSku.price,
-              discountPrice: productSku.discountPrice,
-              discountPercentage: productSku.discountPercentage,
-              newProduct: productSku.newProduct,
-            }))}
-          />
-        ))
-      ) : (
-        <p>No products available</p>
-      )} 
+        {status === 'loading' && <p>Carregando produtos...</p>}
+        {status === 'failed' && <p>Erro ao carregar produtos. Tente novamente.</p>}
+        {status === 'succeeded' && products && products.products.length > 0 ? (
+          products.products.map(product => (
+            <ProductCard
+              key={product.id}
+              image={product.image}
+              name={product.name}
+              description={product.description}
+              skus={product.productSkus.map(productSku => ({
+                key: productSku.id,
+                id: productSku.id,
+                productId: product.id,
+                price: productSku.price,
+                discountPrice: productSku.discountPrice,
+                discountPercentage: productSku.discountPercentage,
+                newProduct: productSku.newProduct,
+              }))}
+            />
+          ))
+        ) : (
+          <p>Nenhum produto disponível.</p>
+        )}
       </div>
       <ServiceBar />
       <Footer />
