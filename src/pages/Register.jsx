@@ -1,4 +1,4 @@
-import { RegisterLayout } from "../components/RegisterLayout";
+import { RegisterLayout } from "../components/login/RegisterLayout";
 function Register() {
   return (
     <div>

@@ -1,15 +1,9 @@
-import AuthImage from "./../assets/authImage/authImage.png";
-import GoogleIcon from "./../assets/authImage/GoogleIcon.png";
-import AppleIcon from "./../assets/authImage/AppleIcon.png";
+import AuthImage from "../../assets/authImage/authImage.png";
+import GoogleIcon from "../../assets/authImage/GoogleIcon.png";
+import AppleIcon from "../../assets/authImage/AppleIcon.png";
 
 
 const LoginLayout = () => {
-
-
-
-
-
-
   return (
     <section className="flex h-screen">
       <section className="w-full md:w-7/12 h-screen z-10 flex-col flex items-center justify-center">

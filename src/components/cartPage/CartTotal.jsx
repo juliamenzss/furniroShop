@@ -1,5 +1,5 @@
-import img from "../assets/example.png";
-import trash from "../assets/trash.png";
+import img from "../../assets/example.png";
+import trash from "../../assets/trash.png";
 
 function CartTotal() {
   return (

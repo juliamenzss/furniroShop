@@ -1,4 +1,4 @@
-import { LoginLayout } from "../components/LoginLayout";
+import { LoginLayout } from "../components/login/LoginLayout";
 function Login() {
   return (
     <div>

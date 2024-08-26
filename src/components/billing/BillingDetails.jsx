@@ -1,4 +1,4 @@
-import Ellipse from '../assets/billing/ellipse.png'
+import Ellipse from '../../assets/billing/ellipse.png'
 function BillingDetails() {
     return (
       <section className="w-full max-w-md flex items-center justify-center pt-20">

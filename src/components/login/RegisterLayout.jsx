@@ -1,6 +1,6 @@
-import AuthImage from "./../assets/authImage/authImage.png";
-import GoogleIcon from "./../assets/authImage/GoogleIcon.png";
-import AppleIcon from "./../assets/authImage/AppleIcon.png";
+import AuthImage from "../../assets/authImage/authImage.png";
+import GoogleIcon from "../../assets/authImage/GoogleIcon.png";
+import AppleIcon from "../../assets/authImage/AppleIcon.png";
 
 
 

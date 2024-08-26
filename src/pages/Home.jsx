@@ -1,19 +1,21 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BannerHeader } from "../components/BannerHeader";
-import { ServiceBar } from "../components/ServiceBar";
-import { Menu } from "../components/Menu";
-import { Footer } from "../components/Footer";
-import { ProductCard } from "../components/ProductCard";
+import { BannerHeader } from "../components/banner/BannerHeader";
+import { ServiceBar } from "../components/services/ServiceBar";
+import { Menu } from "../components/menu/Menu";
+import { Footer } from "../components/footer/Footer";
+import { ProductCard } from "../components/card/ProductCard";
 import { Toolbar } from "../components/toolbar/Toolbar";
 import { productFailed, productLoading, productReceived } from "../store/Product/productSlice";
 import { selectProducts, selectProductsStatus } from "../store/Product/Selectors";
+import { Button } from "../components/pagination/Button";
 
 function Home() {
   const dispatch = useDispatch();
   const products = useSelector(selectProducts);
   const status = useSelector(selectProductsStatus);
   const baseURL = useSelector((state) => state.URL.baseURL)
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,7 +34,6 @@ function Home() {
 
     fetchData();
   }, [dispatch, baseURL]);
-
   return (
     <div>
       <Menu />
@@ -63,6 +64,10 @@ function Home() {
           <p>Nenhum produto disponível.</p>
         )}
       </div>
+      <div className="w-screen flex justify-center items-center">
+      <Button />
+      </div>
+
       <ServiceBar />
       <Footer />
     </div>

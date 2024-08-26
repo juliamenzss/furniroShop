@@ -55,7 +55,7 @@ function Footer() {
                 placeholder="Enter Email Adress"
               />
               <button
-                className="pt-4 font-medium sm:pt-0 border-b-2 text-black border-zinc-600"
+                className="pt-4 font-medium sm:pt-0 border-b-2 text-black border-zinc-600 transition hover:text-caramel"
                 type="subit">
                 SUBSCRIBE
               </button>

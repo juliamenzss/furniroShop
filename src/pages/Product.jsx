@@ -1,15 +1,18 @@
-import { Menu } from "../components/Menu"
-import { Footer } from "../components/Footer"
-import { NavigationToolbar } from "../components/NavigationToolbar"
-import { Details } from "../components/Details";
-
+import { Menu } from "../components/menu/Menu"
+import { Footer } from "../components/footer/Footer"
+import { NavigationToolbar } from "../components/toolbar/Navigation"
+import { ProductDetails } from "../components/productDetails/ProductDetails"
+import { Recommendation } from "../components/productDetails/Recommendation"
 
 function Product() {
+    
+
     return (
         <div>
             <Menu />
             <NavigationToolbar />
-            <Details />
+            <ProductDetails />
+            <Recommendation />
             <Footer />
         </div>
     )

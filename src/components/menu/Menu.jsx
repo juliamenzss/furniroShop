@@ -1,8 +1,8 @@
-import Logo from "./../assets/menu/logo.png";
-import Profile from "./../assets/menu/profile.png";
-import Cart from "./../assets/menu/cart.png";
+import Logo from "../../assets/menu/logo.png";
+import Profile from "../../assets/menu/profile.png";
+import Cart from "../../assets/menu/cart.png";
 import { useState } from "react";
-import { CartBar } from "./cartBar/Cart";
+import { CartBar } from "../cartBar/Cart";
 import { useSelector } from "react-redux";
 
 function Menu() {

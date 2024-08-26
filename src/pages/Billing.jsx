@@ -1,9 +1,9 @@
-import { BannerHeader } from "../components/BannerHeader";
-import { ServiceBar } from "../components/ServiceBar";
-import { Menu } from "../components/Menu";
-import { Footer } from "../components/Footer";
-import { BillingForm } from "../components/BillingForm";
-import { BillingDetails } from "../components/BillingDetails";
+import { BannerHeader } from "../components/banner/BannerHeader";
+import { ServiceBar } from "../components/services/ServiceBar";
+import { Menu } from "../components/menu/Menu";
+import { Footer } from "../components/footer/Footer";
+import { BillingForm } from "../components/billing/BillingForm";
+import { BillingDetails } from "../components/billing/BillingDetails";
 
 function Billing() {
   const bannerName = "Checkout";

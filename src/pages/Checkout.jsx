@@ -1,8 +1,8 @@
-import { BannerHeader } from "../components/BannerHeader";
-import { ServiceBar } from "../components/ServiceBar";
-import { Menu } from "../components/Menu";
-import { Footer } from "../components/Footer";
-import { ProductCard } from "../components/ProductCard";
+import { BannerHeader } from "../components/banner/BannerHeader";
+import { ServiceBar } from "../components/services/ServiceBar";
+import { Menu } from "../components/menu/Menu";
+import { Footer } from "../components/footer/Footer";
+import { ProductCard } from "../components/card/ProductCard";
 
 function Checkout() {
   const bannerName = "Checkout";

@@ -1,17 +1,30 @@
-import Syltherine from "../assets/syltherine.png";
-import Share from "../assets/hoverImage/share.png";
-import Compare from "../assets/hoverImage/compare.png";
-import Like from "../assets/hoverImage/like.png";
+import Share from "../../assets/hoverImage/share.png";
+import Compare from "../../assets/hoverImage/compare.png";
+import Like from "../../assets/hoverImage/like.png";
 import { useDispatch, useSelector } from 'react-redux';
-import { addProduct } from "../store/cart/cartSlice";
+import { addProduct } from "../../store/cart/cartSlice";
+import { setProductId } from "../../store/Product/productIdSlice";
+import { useNavigate } from 'react-router-dom';
 
 
-function ProductCard({ image, name, description, skus}) {
+
+function ProductCard({ image, name, description, skus }) {
+  
   const sku = skus[0];
-
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleAddToCart = () => dispatch(addProduct({
+
+  const handleAddId = () => {
+    dispatch(setProductId({id: sku.productId, skuId: sku.id}))
+    console.log('aqui é click', sku.productId)
+    navigate('/product')
+  }
+
+
+  const handleAddToCart = (event) => {
+    event.stopPropagation();
+    dispatch(addProduct({
     productId: sku.productId,
     productSkuId: sku.id,
     name: name,
@@ -20,13 +33,14 @@ function ProductCard({ image, name, description, skus}) {
     discountPrice: sku.discountPrice,
     quantity: 1
   }))
+  }
 
 
   
 
   return (
-    <section className="max-w-sm w-64 shadow-sm m-5 bg-silver-gray">
-      <div className="relative group">
+    <section className="max-w-sm w-64 shadow-sm m-5 bg-silver-gray cursor-pointer">
+      <div className="relative group" onClick={handleAddId} >
         <div>
           {sku.discountPercentage ? (
             <div className="absolute top-2 right-2 rounded-3xl h-9 w-9 bg-red-light flex justify-center items-center">
